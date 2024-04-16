@@ -1,5 +1,12 @@
 upstreams:
   -
+    name: upcross
+    git_url: https://github.com/rtjk/CROSS-PQClean.git
+    git_branch: master
+    git_commit: 0b189102f2b17109f34aa7f331b8b05a96e16ecf
+    sig_meta_path: 'generate/crypto_sign/{pqclean_scheme}/META.yml'
+    sig_scheme_path: 'generate/crypto_sign/{pqclean_scheme}'
+  -
     name: oldpqclean
     git_url: https://github.com/PQClean/PQClean.git
     git_branch: master
@@ -161,6 +168,17 @@ kems:
         alias_scheme: "1024"
         alias_pretty_name_full: ML-KEM-1024
 sigs:
+  -
+    name: cross
+    default_implementation: clean
+    upstream_location: upcross
+    schemes:
+      -
+        scheme: "rsdp_128_balanced"
+        pqclean_scheme: cross-rsdp-128-balanced
+        pretty_name_full: Cross-rsdp-128-balanced
+        signed_msg_order: sig_then_msg
+        #signed_msg_order: cross
   -
     name: dilithium
     default_implementation: ref
