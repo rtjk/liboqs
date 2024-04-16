@@ -125,6 +125,9 @@
 #cmakedefine OQS_ENABLE_KEM_ml_kem_1024_ipd_avx2 1
 #cmakedefine OQS_ENABLE_KEM_ml_kem_1024_avx2 1
 
+#cmakedefine OQS_ENABLE_SIG_CROSS 1
+#cmakedefine OQS_ENABLE_SIG_cross_rsdp_128_balanced 1
+
 #cmakedefine OQS_ENABLE_SIG_DILITHIUM 1
 #cmakedefine OQS_ENABLE_SIG_dilithium_2 1
 #cmakedefine OQS_ENABLE_SIG_dilithium_2_avx2 1

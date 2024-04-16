@@ -32,6 +32,8 @@ extern "C" {
 #endif
 
 ///// OQS_COPY_FROM_UPSTREAM_FRAGMENT_ALG_IDENTIFIER_START
+/** Algorithm identifier for Cross-rsdp-128-balanced */
+#define OQS_SIG_alg_cross_rsdp_128_balanced "Cross-rsdp-128-balanced"
 /** Algorithm identifier for Dilithium2 */
 #define OQS_SIG_alg_dilithium_2 "Dilithium2"
 /** Algorithm identifier for Dilithium3 */
@@ -87,7 +89,7 @@ extern "C" {
 ///// OQS_COPY_FROM_UPSTREAM_FRAGMENT_ALGS_LENGTH_START
 
 /** Number of algorithm identifiers above. */
-#define OQS_SIG_algs_length 25
+#define OQS_SIG_algs_length 26
 ///// OQS_COPY_FROM_UPSTREAM_FRAGMENT_ALGS_LENGTH_END
 
 /**
@@ -254,6 +256,9 @@ OQS_API OQS_STATUS OQS_SIG_verify(const OQS_SIG *sig, const uint8_t *message, si
 OQS_API void OQS_SIG_free(OQS_SIG *sig);
 
 ///// OQS_COPY_FROM_UPSTREAM_FRAGMENT_INCLUDE_START
+#ifdef OQS_ENABLE_SIG_CROSS
+#include <oqs/sig_cross.h>
+#endif /* OQS_ENABLE_SIG_CROSS */
 #ifdef OQS_ENABLE_SIG_DILITHIUM
 #include <oqs/sig_dilithium.h>
 #endif /* OQS_ENABLE_SIG_DILITHIUM */

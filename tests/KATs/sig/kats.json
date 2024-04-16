@@ -1,4 +1,7 @@
 {
+  "Cross-rsdp-128-balanced": {
+    "single": "854a7564ebe520b38e54d9cf03a38c232cdf07cd285946a509238c0735385098"
+  },
   "Dilithium2": {
     "all": "38337ea2e165cc1161de2da5af515a187d20d65f1aaffde844121c3c21b27c07",
     "single": "26ae9c1224171e957dbe38672942d31edb7dffbe700825e0cb52128cdb45280a"
