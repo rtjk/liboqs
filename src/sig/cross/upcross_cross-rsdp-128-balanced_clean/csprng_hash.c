@@ -22,10 +22,10 @@
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  **/
-
 #include <string.h>
 #include "csprng_hash.h"
-CSPRNG_STATE_T platform_csprng_state;
+// TODO: remove definition to avoid "multiple definition" error in liboqs
+CSPRNG_STATE_T PQCLEAN_CROSSRSDP128BALANCED_CLEAN_platform_csprng_state;
 
 #define  POSITION_MASK (( (uint16_t)1 << BITS_TO_REPRESENT(T-1))-1)
 

@@ -1,6 +1,60 @@
 {
+  "CROSS-rsdp-128-balanced": {
+    "single": "eefc97a5c9229e951ad5c3ec324311677bde72f4fc5d5fec0f867f69c4729e57"
+  },
+  "CROSS-rsdp-128-fast": {
+    "single": "7d85c661d8da5e00952fe45dc890c8d4216641df41455dc54d5dc87d39232f5f"
+  },
+  "CROSS-rsdp-128-small": {
+    "single": "61514039467c0eeaac75306ed2ecc6d9b37b4be46fc303c4cc49a9e0b4611a45"
+  },
+  "CROSS-rsdp-192-balanced": {
+    "single": "1078117cb91d2dc316f0ddf3227d536bdfd9e2579acb0d6430b96027f237f509"
+  },
+  "CROSS-rsdp-192-fast": {
+    "single": "5c5902f3d2d3797a1da8136c43ebffebfdd9e762c558046b9b3596839677384a"
+  },
+  "CROSS-rsdp-192-small": {
+    "single": "3dd9d4c3f611abb8ea2ebbaf4465e516854169eb92b22a26b7f8011976a8417d"
+  },
+  "CROSS-rsdp-256-balanced": {
+    "single": "d58926fc1660250ad8ca6ff4ffb34a1ac5b0398477bd2b3854aae97891d495ca"
+  },
+  "CROSS-rsdp-256-fast": {
+    "single": "6367164c6bb5194dc87f0e71edf5d3b151ae296e6adb20c20e217f197a77f3cb"
+  },
+  "CROSS-rsdp-256-small": {
+    "single": "445477598733756c82d9f33d55e6724fdfcbbdcade402df20af08d4f2c93e893"
+  },
+  "CROSS-rsdpg-128-balanced": {
+    "single": "ea62b4c9476b2065cb7440d4cac63f98c493ee9a0f14718958932602000d9fdb"
+  },
+  "CROSS-rsdpg-128-fast": {
+    "single": "62bcbf5ec6f3b8238c919310337bedb4af0c6ecaf8c85d894d5c7ae4efe27603"
+  },
+  "CROSS-rsdpg-128-small": {
+    "single": "05fa093e5c72b876af595635e4c9cc83b3bdd9b5c83bef39441784f4d230003a"
+  },
+  "CROSS-rsdpg-192-balanced": {
+    "single": "aec6a3462688b6889ba38b14c537d42cb765a1f075218be4c9489a6fcf53678e"
+  },
+  "CROSS-rsdpg-192-fast": {
+    "single": "68f52f59e76ce74d6d2b7999e4a08c1322a49e2aae05e1ef8855f8b1564982e1"
+  },
+  "CROSS-rsdpg-192-small": {
+    "single": "d51d8a0ce6ec20380bcac20ecdf0017afbd90ff6f2066e36fdec94daa6adbe59"
+  },
+  "CROSS-rsdpg-256-balanced": {
+    "single": "0d2120b5de153681206f15f220a0df2e09743a1f3cf88b5fa0725e0b1438022e"
+  },
+  "CROSS-rsdpg-256-fast": {
+    "single": "0374312247c70abca3fff494f0bd795404cda9b0ad2ddcbbcfadbf1c1eda28c7"
+  },
+  "CROSS-rsdpg-256-small": {
+    "single": "3e1982acafafa4cfb3a10295214d2bf257906bf9139acbe02c593116846fdf66"
+  },
   "Cross-rsdp-128-balanced": {
-    "single": "854a7564ebe520b38e54d9cf03a38c232cdf07cd285946a509238c0735385098"
+    "single": "eefc97a5c9229e951ad5c3ec324311677bde72f4fc5d5fec0f867f69c4729e57"
   },
   "Dilithium2": {
     "all": "38337ea2e165cc1161de2da5af515a187d20d65f1aaffde844121c3c21b27c07",

@@ -32,8 +32,42 @@ extern "C" {
 #endif
 
 ///// OQS_COPY_FROM_UPSTREAM_FRAGMENT_ALG_IDENTIFIER_START
-/** Algorithm identifier for Cross-rsdp-128-balanced */
-#define OQS_SIG_alg_cross_rsdp_128_balanced "Cross-rsdp-128-balanced"
+/** Algorithm identifier for CROSS-rsdp-128-balanced */
+#define OQS_SIG_alg_cross_rsdp_128_balanced "CROSS-rsdp-128-balanced"
+/** Algorithm identifier for CROSS-rsdp-128-fast */
+#define OQS_SIG_alg_cross_rsdp_128_fast "CROSS-rsdp-128-fast"
+/** Algorithm identifier for CROSS-rsdp-128-small */
+#define OQS_SIG_alg_cross_rsdp_128_small "CROSS-rsdp-128-small"
+/** Algorithm identifier for CROSS-rsdp-192-balanced */
+#define OQS_SIG_alg_cross_rsdp_192_balanced "CROSS-rsdp-192-balanced"
+/** Algorithm identifier for CROSS-rsdp-192-fast */
+#define OQS_SIG_alg_cross_rsdp_192_fast "CROSS-rsdp-192-fast"
+/** Algorithm identifier for CROSS-rsdp-192-small */
+#define OQS_SIG_alg_cross_rsdp_192_small "CROSS-rsdp-192-small"
+/** Algorithm identifier for CROSS-rsdp-256-balanced */
+#define OQS_SIG_alg_cross_rsdp_256_balanced "CROSS-rsdp-256-balanced"
+/** Algorithm identifier for CROSS-rsdp-256-fast */
+#define OQS_SIG_alg_cross_rsdp_256_fast "CROSS-rsdp-256-fast"
+/** Algorithm identifier for CROSS-rsdp-256-small */
+#define OQS_SIG_alg_cross_rsdp_256_small "CROSS-rsdp-256-small"
+/** Algorithm identifier for CROSS-rsdpg-128-balanced */
+#define OQS_SIG_alg_cross_rsdpg_128_balanced "CROSS-rsdpg-128-balanced"
+/** Algorithm identifier for CROSS-rsdpg-128-fast */
+#define OQS_SIG_alg_cross_rsdpg_128_fast "CROSS-rsdpg-128-fast"
+/** Algorithm identifier for CROSS-rsdpg-128-small */
+#define OQS_SIG_alg_cross_rsdpg_128_small "CROSS-rsdpg-128-small"
+/** Algorithm identifier for CROSS-rsdpg-192-balanced */
+#define OQS_SIG_alg_cross_rsdpg_192_balanced "CROSS-rsdpg-192-balanced"
+/** Algorithm identifier for CROSS-rsdpg-192-fast */
+#define OQS_SIG_alg_cross_rsdpg_192_fast "CROSS-rsdpg-192-fast"
+/** Algorithm identifier for CROSS-rsdpg-192-small */
+#define OQS_SIG_alg_cross_rsdpg_192_small "CROSS-rsdpg-192-small"
+/** Algorithm identifier for CROSS-rsdpg-256-balanced */
+#define OQS_SIG_alg_cross_rsdpg_256_balanced "CROSS-rsdpg-256-balanced"
+/** Algorithm identifier for CROSS-rsdpg-256-fast */
+#define OQS_SIG_alg_cross_rsdpg_256_fast "CROSS-rsdpg-256-fast"
+/** Algorithm identifier for CROSS-rsdpg-256-small */
+#define OQS_SIG_alg_cross_rsdpg_256_small "CROSS-rsdpg-256-small"
 /** Algorithm identifier for Dilithium2 */
 #define OQS_SIG_alg_dilithium_2 "Dilithium2"
 /** Algorithm identifier for Dilithium3 */
@@ -89,7 +123,7 @@ extern "C" {
 ///// OQS_COPY_FROM_UPSTREAM_FRAGMENT_ALGS_LENGTH_START
 
 /** Number of algorithm identifiers above. */
-#define OQS_SIG_algs_length 26
+#define OQS_SIG_algs_length 43
 ///// OQS_COPY_FROM_UPSTREAM_FRAGMENT_ALGS_LENGTH_END
 
 /**
