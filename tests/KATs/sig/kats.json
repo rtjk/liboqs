@@ -1,57 +1,57 @@
 {
   "CROSS-rsdp-128-balanced": {
-    "single": "eefc97a5c9229e951ad5c3ec324311677bde72f4fc5d5fec0f867f69c4729e57"
+    "single": "e766c73cf7287e691dfa33a131631c04c765d1ee92bf91da66a741e2c1130772"
   },
   "CROSS-rsdp-128-fast": {
-    "single": "7d85c661d8da5e00952fe45dc890c8d4216641df41455dc54d5dc87d39232f5f"
+    "single": "28e7b80b09b4ef5c2ddefbd092afa2ece8312a0e2d42415deae5c7aaac8ae47b"
   },
   "CROSS-rsdp-128-small": {
-    "single": "61514039467c0eeaac75306ed2ecc6d9b37b4be46fc303c4cc49a9e0b4611a45"
+    "single": "ecdb831bfe6a8bb5a42ab2cba07036610aea642d025fc8cc09360444220207e2"
   },
   "CROSS-rsdp-192-balanced": {
-    "single": "1078117cb91d2dc316f0ddf3227d536bdfd9e2579acb0d6430b96027f237f509"
+    "single": "8603e4dce0eb39a47dd19fcf00893ff3d3ec23c7b70ac54451b514e957512bb4"
   },
   "CROSS-rsdp-192-fast": {
-    "single": "5c5902f3d2d3797a1da8136c43ebffebfdd9e762c558046b9b3596839677384a"
+    "single": "fffeade77ea90fdee48b7f6d6e1b0767d5010acf703299ef65a8a8d61e8267f9"
   },
   "CROSS-rsdp-192-small": {
-    "single": "3dd9d4c3f611abb8ea2ebbaf4465e516854169eb92b22a26b7f8011976a8417d"
+    "single": "67f3b7e24f8d28227bb9e51b1ba0d712ea9ab62b3161b743af30d6864088eedf"
   },
   "CROSS-rsdp-256-balanced": {
-    "single": "d58926fc1660250ad8ca6ff4ffb34a1ac5b0398477bd2b3854aae97891d495ca"
+    "single": "37ff515d6b111f814f34ee08470420a4ca1614db105baca47f003ccd0123a02f"
   },
   "CROSS-rsdp-256-fast": {
-    "single": "6367164c6bb5194dc87f0e71edf5d3b151ae296e6adb20c20e217f197a77f3cb"
+    "single": "fe74d3adfc2fd3081f570c10f9517be958a54f3fb7ed87a363ad84de38a2fa6a"
   },
   "CROSS-rsdp-256-small": {
-    "single": "445477598733756c82d9f33d55e6724fdfcbbdcade402df20af08d4f2c93e893"
+    "single": "18e09ece296d8a2f8c8c76ad80e80c2340c0dd607a4d9d87e9daafe3b67a8f59"
   },
   "CROSS-rsdpg-128-balanced": {
-    "single": "ea62b4c9476b2065cb7440d4cac63f98c493ee9a0f14718958932602000d9fdb"
+    "single": "af484813ca0f75c21c3237dbbb40202d8be63670608b4eb6a260cf3c8a4fbdf1"
   },
   "CROSS-rsdpg-128-fast": {
-    "single": "62bcbf5ec6f3b8238c919310337bedb4af0c6ecaf8c85d894d5c7ae4efe27603"
+    "single": "eb6b0fecc3af0dbc92653b766db3466714ba3bc75d461e7c3adae82d5838bdd9"
   },
   "CROSS-rsdpg-128-small": {
-    "single": "05fa093e5c72b876af595635e4c9cc83b3bdd9b5c83bef39441784f4d230003a"
+    "single": "183b604afcb4d034f4b11dc92d86deee6b3b8d4f5af71adb3d0a112412c80bbc"
   },
   "CROSS-rsdpg-192-balanced": {
-    "single": "aec6a3462688b6889ba38b14c537d42cb765a1f075218be4c9489a6fcf53678e"
+    "single": "e829f2c411e8bfe5684d6c917bb1fe937c80467a8df8d5e4081afef7e646c17e"
   },
   "CROSS-rsdpg-192-fast": {
-    "single": "68f52f59e76ce74d6d2b7999e4a08c1322a49e2aae05e1ef8855f8b1564982e1"
+    "single": "b893b6cc835090fa78c22bfb426b22cfb615386f338670123b14f490f8305930"
   },
   "CROSS-rsdpg-192-small": {
-    "single": "d51d8a0ce6ec20380bcac20ecdf0017afbd90ff6f2066e36fdec94daa6adbe59"
+    "single": "ee6a6c6c7cbcdd3ab0fcebba39ae3cd024ae34a599ed1e974eec6bdf19b971be"
   },
   "CROSS-rsdpg-256-balanced": {
-    "single": "0d2120b5de153681206f15f220a0df2e09743a1f3cf88b5fa0725e0b1438022e"
+    "single": "3548522e5eeb0610c6ad138e43b05a29b802038630e819469d32fcb0367290c0"
   },
   "CROSS-rsdpg-256-fast": {
-    "single": "0374312247c70abca3fff494f0bd795404cda9b0ad2ddcbbcfadbf1c1eda28c7"
+    "single": "0e86f6bcc36a4781f19d463ec5cc520237f148ca1bcbba8d07fd1f4db66647f2"
   },
   "CROSS-rsdpg-256-small": {
-    "single": "3e1982acafafa4cfb3a10295214d2bf257906bf9139acbe02c593116846fdf66"
+    "single": "6067cf820cee06f4ecbe58dd648d7d489aba4b83e9fca4b2113baac322bde667"
   },
   "Cross-rsdp-128-balanced": {
     "single": "eefc97a5c9229e951ad5c3ec324311677bde72f4fc5d5fec0f867f69c4729e57"

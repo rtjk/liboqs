@@ -1,11 +1,3 @@
-/*
- * example_sig.c
- *
- * Minimal example of using a post-quantum signature implemented in liboqs.
- *
- * SPDX-License-Identifier: MIT
- */
-
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -13,28 +5,30 @@
 
 #include <oqs/oqs.h>
 
+#include <stdio.h>
+
+////////
+////////
+static void print_array(const char *name, const uint8_t *array, size_t len) {
+    printf("%s: ", name);
+    for (size_t i = 0; i < len; i++) {
+        printf("%02x", array[i]);
+    }
+    printf("\n");
+}
+////////
+////////
+
 #define MESSAGE_LEN 50
+//#define MESSAGE_LEN 30000
 
 /* Cleaning up memory etc */
 void cleanup_stack(uint8_t *secret_key, size_t secret_key_len);
-
 void cleanup_heap(uint8_t *public_key, uint8_t *secret_key,
                   uint8_t *message, uint8_t *signature,
                   OQS_SIG *sig);
 
-/* This function gives an example of the signing operations
- * using only compile-time macros and allocating variables
- * statically on the stack, calling a specific algorithm's functions
- * directly.
- *
- * The macros OQS_SIG_cross_rsdp_256_fast_length_* and the functions OQS_SIG_cross_rsdp_256_fast_*
- * are only defined if the algorithm cross_rsdp_256_fast was enabled at compile-time
- * which must be checked using the OQS_ENABLE_SIG_cross_rsdp_256_fast macro.
- *
- * <oqs/oqsconfig.h>, which is included in <oqs/oqs.h>, contains macros
- * indicating which algorithms were enabled when this instance of liboqs
- * was compiled.
- */
+
 static OQS_STATUS example_stack(void) {
 
 #ifdef OQS_ENABLE_SIG_cross_rsdp_256_fast
@@ -53,22 +47,92 @@ static OQS_STATUS example_stack(void) {
 
 	rc = OQS_SIG_cross_rsdp_256_fast_keypair(public_key, secret_key);
 	if (rc != OQS_SUCCESS) {
-		fprintf(stderr, "ERROR: OQS_SIG_cross_rsdp_256_fast_keypair failed!\n");
+		fprintf(stderr, "ERROR: keypair failed!\n");
 		cleanup_stack(secret_key, OQS_SIG_cross_rsdp_256_fast_length_secret_key);
 		return OQS_ERROR;
 	}
+	else {
+		printf("OK keypair\n");
+	}
+
+
 	rc = OQS_SIG_cross_rsdp_256_fast_sign(signature, &signature_len, message, message_len, secret_key);
 	if (rc != OQS_SUCCESS) {
-		fprintf(stderr, "ERROR: OQS_SIG_cross_rsdp_256_fast_sign failed!\n");
+		fprintf(stderr, "ERROR: sign failed!\n");
 		cleanup_stack(secret_key, OQS_SIG_cross_rsdp_256_fast_length_secret_key);
 		return OQS_ERROR;
 	}
+	else {
+		printf("OK sign\n");
+	}
+
+
 	rc = OQS_SIG_cross_rsdp_256_fast_verify(message, message_len, signature, signature_len, public_key);
 	if (rc != OQS_SUCCESS) {
-		fprintf(stderr, "ERROR: OQS_SIG_cross_rsdp_256_fast_verify failed!\n");
+		fprintf(stderr, "ERROR: verify failed!\n");
 		cleanup_stack(secret_key, OQS_SIG_cross_rsdp_256_fast_length_secret_key);
 		return OQS_ERROR;
 	}
+	else {
+		printf("OK verify\n");
+	}
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+	uint8_t wrong_signature[OQS_SIG_cross_rsdp_256_fast_length_signature];
+	OQS_randombytes(wrong_signature, OQS_SIG_cross_rsdp_256_fast_length_signature);
+	rc = OQS_SIG_cross_rsdp_256_fast_verify(message, message_len, wrong_signature, signature_len, public_key);
+	if (rc == OQS_SUCCESS) {
+		fprintf(stderr, "ERROR: verify success with wrong signature!\n");
+		cleanup_stack(secret_key, OQS_SIG_cross_rsdp_256_fast_length_secret_key);
+		return OQS_ERROR;
+	}
+	else {
+		printf("OK verify fails with wrong signature\n");
+	}
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+	uint8_t wrong_public_key[OQS_SIG_cross_rsdp_256_fast_length_public_key];
+	OQS_randombytes(wrong_public_key, OQS_SIG_cross_rsdp_256_fast_length_public_key);
+	rc = OQS_SIG_cross_rsdp_256_fast_verify(message, message_len, signature, signature_len, wrong_public_key);
+	if (rc == OQS_SUCCESS) {
+		fprintf(stderr, "ERROR: verify success with wrong public key!\n");
+		cleanup_stack(secret_key, OQS_SIG_cross_rsdp_256_fast_length_secret_key);
+		return OQS_ERROR;
+	}
+	else {
+		printf("OK verify fails with wrong public key\n");
+	}
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+	uint8_t wrong_message[MESSAGE_LEN];
+	OQS_randombytes(wrong_message, message_len);
+	rc = OQS_SIG_cross_rsdp_256_fast_verify(wrong_message, message_len, signature, signature_len, public_key);
+	if (rc == OQS_SUCCESS) {
+		fprintf(stderr, "ERROR: verify success with wrong message!\n");
+		cleanup_stack(secret_key, OQS_SIG_cross_rsdp_256_fast_length_secret_key);
+		return OQS_ERROR;
+	}
+	else {
+		printf("OK verify fails with wrong message\n");
+	}
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	////////
+	////////
+	printf("\n\n\n");
+	print_array("message", message, message_len);
+	printf("message_len: %zu\n", message_len);
+	print_array("signature", signature, signature_len);
+	printf("signature_len: %zu\n", signature_len);
+	print_array("public_key", public_key, OQS_SIG_cross_rsdp_256_fast_length_public_key);
+	printf("length_public_key: %zu\n", OQS_SIG_cross_rsdp_256_fast_length_public_key);
+	print_array("secret_key", secret_key, OQS_SIG_cross_rsdp_256_fast_length_secret_key);
+	printf("length_secret_key: %zu\n", OQS_SIG_cross_rsdp_256_fast_length_secret_key);
+	printf("\n\n\n");
+	////////
+	////////
 
 	printf("[example_stack] OQS_SIG_cross_rsdp_256_fast operations completed.\n");
 	cleanup_stack(secret_key, OQS_SIG_cross_rsdp_256_fast_length_secret_key);
@@ -82,14 +146,11 @@ static OQS_STATUS example_stack(void) {
 #endif
 }
 
-/* This function gives an example of the signing operations,
- * allocating variables dynamically on the heap and calling the generic
- * OQS_SIG object.
- *
- * This does not require the use of compile-time macros to check if the
- * algorithm in question was enabled at compile-time; instead, the caller
- * must check that the OQS_SIG object returned is not NULL.
- */
+
+
+
+
+
 static OQS_STATUS example_heap(void) {
 
 #ifdef OQS_ENABLE_SIG_cross_rsdp_256_fast

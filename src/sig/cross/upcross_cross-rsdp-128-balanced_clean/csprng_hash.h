@@ -28,7 +28,7 @@
 #include "sha3.h"
 
 // TODO: check max buffer size
-#define EXTRA_BYTES_FIX 4
+#define EXTRA_BYTES_FIX 10000
 
 /************************* CSPRNG ********************************/
 
@@ -54,14 +54,27 @@ void csprng_randombytes(unsigned char * const x,
 
 /******************************************************************************/
 
+// TODO: CSPRNG release context
+static inline
+void csprng_release(CSPRNG_STATE_T * const csprng_state){
+   xof_shake_release(csprng_state);
+}
+
+/******************************************************************************/
+
+
+// TODO: CSPRNG remove randombytes definition here to use PQClean randombytes
+
 /* global csprng state employed to have deterministic randombytes for testing */
-extern CSPRNG_STATE_T PQCLEAN_CROSSRSDP128BALANCED_CLEAN_platform_csprng_state;
+//extern CSPRNG_STATE_T PQCLEAN_CROSSRSDP128BALANCED_CLEAN_platform_csprng_state;
 /* extracts xlen bytes from the global CSPRNG */
+/* 
 static inline
 void randombytes(unsigned char * x,
                  uint64_t xlen) {
    csprng_randombytes(x,xlen,&PQCLEAN_CROSSRSDP128BALANCED_CLEAN_platform_csprng_state);
 }
+ */
 
 /************************* HASH functions ********************************/
 
@@ -76,6 +89,8 @@ void hash(uint8_t digest[HASH_DIGEST_LENGTH],
    xof_shake_update(&csprng_state,m,mlen);
    xof_shake_final(&csprng_state);    
    xof_shake_extract(&csprng_state,digest,HASH_DIGEST_LENGTH);
+   // TODO: CSPRNG release context
+   xof_shake_release(&csprng_state);
 }
 
 
@@ -92,6 +107,9 @@ FQ_ELEM fq_star_rnd_state(CSPRNG_STATE_T * const csprng_state)
                          csprng_state);
       rnd_value = mask & rnd_value;
    } while (rnd_value > Q-2);
+
+   // TODO: CSPRNG release context
+   csprng_release(csprng_state);
 
    return rnd_value+1;
 } /* end fq_star_rnd_state */
