@@ -70,7 +70,7 @@ void PQCLEAN_CROSSRSDP192FAST_CLEAN_generic_unpack_fq(FQ_ELEM *out, const uint8_
 		       size_t outlen, size_t inlen);
 
 void PQCLEAN_CROSSRSDP192FAST_CLEAN_generic_unpack_fz(FZ_ELEM *out, const uint8_t *in,
-		       size_t outlen, size_t inlen);
+		       size_t outlen);
 
 void PQCLEAN_CROSSRSDP192FAST_CLEAN_generic_uint16_t_unpack(uint16_t *out, const uint8_t *in,
                        size_t outlen, size_t inlen, uint8_t btr);

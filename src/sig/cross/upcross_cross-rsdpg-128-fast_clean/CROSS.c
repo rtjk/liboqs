@@ -357,7 +357,7 @@ void PQCLEAN_CROSSRSDPG128FAST_CLEAN_CROSS_sign(const prikey_t *SK,
     PQCLEAN_CROSSRSDPG128FAST_CLEAN_merkle_tree_proof_compute(sig->mtp,cmt_0,fixed_weight_b);
     PQCLEAN_CROSSRSDPG128FAST_CLEAN_publish_round_seeds(sig->stp,rounds_seeds,fixed_weight_b);
 #else
-    PQCLEAN_CROSSRSDPG128FAST_CLEAN_merkle_tree_proof_compute(sig->mtp,merkle_tree_0,cmt_0,fixed_weight_b);
+    PQCLEAN_CROSSRSDPG128FAST_CLEAN_merkle_tree_proof_compute(sig->mtp,merkle_tree_0,fixed_weight_b);
     PQCLEAN_CROSSRSDPG128FAST_CLEAN_publish_seeds(sig->stp,seed_tree,fixed_weight_b);
 #endif
 
