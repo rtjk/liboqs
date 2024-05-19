@@ -123,11 +123,7 @@ uint16_t PQCLEAN_CROSSRSDP256SMALL_CLEAN_merkle_tree_proof_compute(uint8_t mtp[H
                                const uint8_t leaves_to_reveal[T]){
     uint16_t mtp_len; 
     uint16_t merkle_proof_indices[TREE_NODES_TO_STORE];
-
-    // TODO: remove parameter to avoid -Werror=unused-parameter and Werror=unused-value
-    // uint8_t leaves[T][HASH_DIGEST_LENGTH]
-    //if(leaves == NULL) {leaves = NULL;};
-
+    
     PQCLEAN_CROSSRSDP256SMALL_CLEAN_generate_merkle_proof(merkle_proof_indices, &mtp_len, leaves_to_reveal);
 
     for (size_t i=0; i< mtp_len; i++) {

@@ -508,7 +508,7 @@ void PQCLEAN_CROSSRSDPG128BALANCED_AVX2_generic_unpack_fq(FQ_ELEM *out, const ui
 
 #if Q == 127
 
-   // TODO: useless line added to avoid [-Werror=unused-parameter]
+   /* PQClean-edit: unused parameter */
    if(inlen == 0) inlen = 0;
 
    size_t i;
@@ -737,10 +737,6 @@ void PQCLEAN_CROSSRSDPG128BALANCED_AVX2_generic_unpack_fq(FQ_ELEM *out, const ui
 void PQCLEAN_CROSSRSDPG128BALANCED_AVX2_generic_unpack_fz(FZ_ELEM *out, const uint8_t *in,
                        size_t outlen)
 {
-   
-   // TODO: remove parameter to avoid -Werror=unused-parameter
-   // size_t inlen
-   //if(inlen == 0) inlen = 0;
 
 #if Z == 127
    size_t i;

@@ -69,8 +69,8 @@ void PQCLEAN_CROSSRSDPG256SMALL_AVX2_ptree(unsigned char seed_tree[NUM_NODES_SEE
 #define TO_PUBLISH 1
 #define NOT_TO_PUBLISH 0
 
-// TODO: no vla
-//csprng_input_len = SALT_LENGTH_BYTES + SEED_LENGTH_BYTES + sizeof(uint16_t);
+
+/* PQClean-edit: avoid VLA */
 #define CSPRNG_INPUT_LEN (SALT_LENGTH_BYTES + SEED_LENGTH_BYTES + 2)
 
 #if defined(NO_TREES)
@@ -92,7 +92,7 @@ int PQCLEAN_CROSSRSDPG256SMALL_AVX2_compute_round_seeds(unsigned char rounds_see
    initialize_csprng(&csprng_states[0], csprng_input, csprng_input_len);
    csprng_randombytes(quad_seed,4*SEED_LENGTH_BYTES,&csprng_states[0]);
 
-   // TODO: CSPRNG release context
+   /* PQClean-edit: CSPRNG release context */
    csprng_release(&csprng_states[0]);
 
    int remainders[4] = {0};
@@ -110,7 +110,7 @@ int PQCLEAN_CROSSRSDPG256SMALL_AVX2_compute_round_seeds(unsigned char rounds_see
                           (T/4+remainders[i])*SEED_LENGTH_BYTES,
                           &csprng_states[i]);
 
-       // TODO: CSPRNG release context
+       /* PQClean-edit: CSPRNG release context */
        csprng_release(&csprng_states[i]);
 
        offset += remainders[i];
@@ -257,7 +257,7 @@ void PQCLEAN_CROSSRSDPG256SMALL_AVX2_generate_seed_tree_from_root(unsigned char
                                  &tree_csprng_state);
           }
 
-          // TODO: CSPRNG release context
+          /* PQClean-edit: CSPRNG release context */
           csprng_release(&tree_csprng_state);
 
       }
@@ -375,7 +375,7 @@ int PQCLEAN_CROSSRSDPG256SMALL_AVX2_regenerate_round_seeds(unsigned char
                                    SEED_LENGTH_BYTES,
                                    &tree_csprng_state);
 
-                // TODO: CSPRNG release context
+                /* PQClean-edit: CSPRNG release context */
                 csprng_release(&tree_csprng_state);
           }
       }
