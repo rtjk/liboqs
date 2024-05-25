@@ -1,23 +1,23 @@
 {
   "bomFormat": "CBOM",
   "specVersion": "1.4-cbom-1.0",
-  "serialNumber": "urn:uuid:214891a8-1e86-4c39-86a1-91b149f8229c",
+  "serialNumber": "urn:uuid:341648b3-a968-42ca-9343-13df56b2bad4",
   "version": 1,
   "metadata": {
-    "timestamp": "2024-05-19T17:31:57.705004",
+    "timestamp": "2024-05-26T00:11:00.130000",
     "component": {
       "type": "library",
-      "bom-ref": "pkg:github/open-quantum-safe/liboqs@44052a651a5148aca6e582d2449aee1b5f70aa40",
+      "bom-ref": "pkg:github/open-quantum-safe/liboqs@4824390d880c948b43bd1387d0dab53ace832c02",
       "name": "liboqs",
-      "version": "44052a651a5148aca6e582d2449aee1b5f70aa40"
+      "version": "4824390d880c948b43bd1387d0dab53ace832c02"
     }
   },
   "components": [
     {
       "type": "library",
-      "bom-ref": "pkg:github/open-quantum-safe/liboqs@44052a651a5148aca6e582d2449aee1b5f70aa40",
+      "bom-ref": "pkg:github/open-quantum-safe/liboqs@4824390d880c948b43bd1387d0dab53ace832c02",
       "name": "liboqs",
-      "version": "44052a651a5148aca6e582d2449aee1b5f70aa40"
+      "version": "4824390d880c948b43bd1387d0dab53ace832c02"
     },
     {
       "type": "crypto-asset",
@@ -1121,6 +1121,726 @@
     },
     {
       "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdp-128-balanced:generic",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdp-128-balanced",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "generic"
+        },
+        "nistQuantumSecurityLevel": 1
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdp-128-balanced:x86_64",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdp-128-balanced",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "x86_64"
+        },
+        "nistQuantumSecurityLevel": 1
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdp-128-fast:generic",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdp-128-fast",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "generic"
+        },
+        "nistQuantumSecurityLevel": 1
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdp-128-fast:x86_64",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdp-128-fast",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "x86_64"
+        },
+        "nistQuantumSecurityLevel": 1
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdp-128-small:generic",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdp-128-small",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "generic"
+        },
+        "nistQuantumSecurityLevel": 1
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdp-128-small:x86_64",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdp-128-small",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "x86_64"
+        },
+        "nistQuantumSecurityLevel": 1
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdp-192-balanced:generic",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdp-192-balanced",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "generic"
+        },
+        "nistQuantumSecurityLevel": 3
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdp-192-balanced:x86_64",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdp-192-balanced",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "x86_64"
+        },
+        "nistQuantumSecurityLevel": 3
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdp-192-fast:generic",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdp-192-fast",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "generic"
+        },
+        "nistQuantumSecurityLevel": 3
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdp-192-fast:x86_64",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdp-192-fast",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "x86_64"
+        },
+        "nistQuantumSecurityLevel": 3
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdp-192-small:generic",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdp-192-small",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "generic"
+        },
+        "nistQuantumSecurityLevel": 3
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdp-192-small:x86_64",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdp-192-small",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "x86_64"
+        },
+        "nistQuantumSecurityLevel": 3
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdp-256-balanced:generic",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdp-256-balanced",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "generic"
+        },
+        "nistQuantumSecurityLevel": 5
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdp-256-balanced:x86_64",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdp-256-balanced",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "x86_64"
+        },
+        "nistQuantumSecurityLevel": 5
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdp-256-fast:generic",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdp-256-fast",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "generic"
+        },
+        "nistQuantumSecurityLevel": 5
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdp-256-fast:x86_64",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdp-256-fast",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "x86_64"
+        },
+        "nistQuantumSecurityLevel": 5
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdp-256-small:generic",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdp-256-small",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "generic"
+        },
+        "nistQuantumSecurityLevel": 5
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdp-256-small:x86_64",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdp-256-small",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "x86_64"
+        },
+        "nistQuantumSecurityLevel": 5
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdpg-128-balanced:generic",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdpg-128-balanced",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "generic"
+        },
+        "nistQuantumSecurityLevel": 1
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdpg-128-balanced:x86_64",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdpg-128-balanced",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "x86_64"
+        },
+        "nistQuantumSecurityLevel": 1
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdpg-128-fast:generic",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdpg-128-fast",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "generic"
+        },
+        "nistQuantumSecurityLevel": 1
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdpg-128-fast:x86_64",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdpg-128-fast",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "x86_64"
+        },
+        "nistQuantumSecurityLevel": 1
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdpg-128-small:generic",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdpg-128-small",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "generic"
+        },
+        "nistQuantumSecurityLevel": 1
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdpg-128-small:x86_64",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdpg-128-small",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "x86_64"
+        },
+        "nistQuantumSecurityLevel": 1
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdpg-192-balanced:generic",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdpg-192-balanced",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "generic"
+        },
+        "nistQuantumSecurityLevel": 3
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdpg-192-balanced:x86_64",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdpg-192-balanced",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "x86_64"
+        },
+        "nistQuantumSecurityLevel": 3
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdpg-192-fast:generic",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdpg-192-fast",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "generic"
+        },
+        "nistQuantumSecurityLevel": 3
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdpg-192-fast:x86_64",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdpg-192-fast",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "x86_64"
+        },
+        "nistQuantumSecurityLevel": 3
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdpg-192-small:generic",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdpg-192-small",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "generic"
+        },
+        "nistQuantumSecurityLevel": 3
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdpg-192-small:x86_64",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdpg-192-small",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "x86_64"
+        },
+        "nistQuantumSecurityLevel": 3
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdpg-256-balanced:generic",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdpg-256-balanced",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "generic"
+        },
+        "nistQuantumSecurityLevel": 5
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdpg-256-balanced:x86_64",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdpg-256-balanced",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "x86_64"
+        },
+        "nistQuantumSecurityLevel": 5
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdpg-256-fast:generic",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdpg-256-fast",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "generic"
+        },
+        "nistQuantumSecurityLevel": 5
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdpg-256-fast:x86_64",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdpg-256-fast",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "x86_64"
+        },
+        "nistQuantumSecurityLevel": 5
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdpg-256-small:generic",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdpg-256-small",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "generic"
+        },
+        "nistQuantumSecurityLevel": 5
+      }
+    },
+    {
+      "type": "crypto-asset",
+      "bom-ref": "alg:cross-rsdpg-256-small:x86_64",
+      "name": "CROSS",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "variant": "cross-rsdpg-256-small",
+          "primitive": "signature",
+          "implementationLevel": "softwarePlainRam",
+          "cryptoFunctions": [
+            "keygen",
+            "sign",
+            "verify"
+          ],
+          "implementationPlatform": "x86_64"
+        },
+        "nistQuantumSecurityLevel": 5
+      }
+    },
+    {
+      "type": "crypto-asset",
       "bom-ref": "alg:Dilithium2:generic",
       "name": "CRYSTALS-Dilithium",
       "cryptoProperties": {
@@ -2168,7 +2888,7 @@
   ],
   "dependencies": [
     {
-      "ref": "pkg:github/open-quantum-safe/liboqs@44052a651a5148aca6e582d2449aee1b5f70aa40",
+      "ref": "pkg:github/open-quantum-safe/liboqs@4824390d880c948b43bd1387d0dab53ace832c02",
       "dependsOn": [
         "alg:BIKE-L1:x86_64",
         "alg:BIKE-L3:x86_64",
@@ -2225,6 +2945,42 @@
         "alg:ML-KEM-1024-ipd:x86_64",
         "alg:sntrup761:generic",
         "alg:sntrup761:x86_64",
+        "alg:cross-rsdp-128-balanced:generic",
+        "alg:cross-rsdp-128-balanced:x86_64",
+        "alg:cross-rsdp-128-fast:generic",
+        "alg:cross-rsdp-128-fast:x86_64",
+        "alg:cross-rsdp-128-small:generic",
+        "alg:cross-rsdp-128-small:x86_64",
+        "alg:cross-rsdp-192-balanced:generic",
+        "alg:cross-rsdp-192-balanced:x86_64",
+        "alg:cross-rsdp-192-fast:generic",
+        "alg:cross-rsdp-192-fast:x86_64",
+        "alg:cross-rsdp-192-small:generic",
+        "alg:cross-rsdp-192-small:x86_64",
+        "alg:cross-rsdp-256-balanced:generic",
+        "alg:cross-rsdp-256-balanced:x86_64",
+        "alg:cross-rsdp-256-fast:generic",
+        "alg:cross-rsdp-256-fast:x86_64",
+        "alg:cross-rsdp-256-small:generic",
+        "alg:cross-rsdp-256-small:x86_64",
+        "alg:cross-rsdpg-128-balanced:generic",
+        "alg:cross-rsdpg-128-balanced:x86_64",
+        "alg:cross-rsdpg-128-fast:generic",
+        "alg:cross-rsdpg-128-fast:x86_64",
+        "alg:cross-rsdpg-128-small:generic",
+        "alg:cross-rsdpg-128-small:x86_64",
+        "alg:cross-rsdpg-192-balanced:generic",
+        "alg:cross-rsdpg-192-balanced:x86_64",
+        "alg:cross-rsdpg-192-fast:generic",
+        "alg:cross-rsdpg-192-fast:x86_64",
+        "alg:cross-rsdpg-192-small:generic",
+        "alg:cross-rsdpg-192-small:x86_64",
+        "alg:cross-rsdpg-256-balanced:generic",
+        "alg:cross-rsdpg-256-balanced:x86_64",
+        "alg:cross-rsdpg-256-fast:generic",
+        "alg:cross-rsdpg-256-fast:x86_64",
+        "alg:cross-rsdpg-256-small:generic",
+        "alg:cross-rsdpg-256-small:x86_64",
         "alg:Dilithium2:generic",
         "alg:Dilithium2:x86_64",
         "alg:Dilithium2:armv8-a",
@@ -2693,6 +3449,258 @@
       "ref": "alg:sntrup761:x86_64",
       "dependsOn": [
         "alg:aes"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdp-128-balanced:generic",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdp-128-balanced:x86_64",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdp-128-fast:generic",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdp-128-fast:x86_64",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdp-128-small:generic",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdp-128-small:x86_64",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdp-192-balanced:generic",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdp-192-balanced:x86_64",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdp-192-fast:generic",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdp-192-fast:x86_64",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdp-192-small:generic",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdp-192-small:x86_64",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdp-256-balanced:generic",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdp-256-balanced:x86_64",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdp-256-fast:generic",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdp-256-fast:x86_64",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdp-256-small:generic",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdp-256-small:x86_64",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdpg-128-balanced:generic",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdpg-128-balanced:x86_64",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdpg-128-fast:generic",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdpg-128-fast:x86_64",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdpg-128-small:generic",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdpg-128-small:x86_64",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdpg-192-balanced:generic",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdpg-192-balanced:x86_64",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdpg-192-fast:generic",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdpg-192-fast:x86_64",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdpg-192-small:generic",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdpg-192-small:x86_64",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdpg-256-balanced:generic",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdpg-256-balanced:x86_64",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdpg-256-fast:generic",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdpg-256-fast:x86_64",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdpg-256-small:generic",
+      "dependsOn": [
+        "alg:sha3"
+      ],
+      "dependencyType": "uses"
+    },
+    {
+      "ref": "alg:cross-rsdpg-256-small:x86_64",
+      "dependsOn": [
+        "alg:sha3"
       ],
       "dependencyType": "uses"
     },

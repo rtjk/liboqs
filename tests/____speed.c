@@ -43,19 +43,21 @@ static void fullcycle(OQS_SIG *sig, uint8_t *public_key, uint8_t *secret_key, ui
 	if (OQS_SIG_verify(sig, message, message_len, signature, signature_len, public_key) != OQS_SUCCESS) {
         ////////
         ////////
+		
         printf("\n\n\n");
-        print_array("message", message, message_len);
+        //print_array("message", message, message_len);
         printf("message_len: %zu\n", message_len);
-        print_array("signature", signature, signature_len);
+        //print_array("signature", signature, signature_len);
         printf("signature_len: %zu\n", signature_len);
-        print_array("public_key", public_key, sig->length_public_key);
+        //print_array("public_key", public_key, sig->length_public_key);
         printf("length_public_key: %zu\n", sig->length_public_key);
-        print_array("secret_key", secret_key, sig->length_secret_key);
+        //print_array("secret_key", secret_key, sig->length_secret_key);
         printf("length_secret_key: %zu\n", sig->length_secret_key);
         printf("\n\n\n");
+		
         ////////
         ////////
-		printf("verify error. Exiting.\n");
+		printf("\nverify error. Exiting.\n");
         //exit(-1);
 	}
 }
@@ -142,8 +144,11 @@ int main(int argc, char **argv) {
 	OQS_STATUS rc;
 
 	bool printUsage = false;
-	uint64_t duration = 3;
+
+	uint64_t duration = 20;
+
 	bool printSigInfo = false;
+	
 	bool doFullCycle = false;
 
 	OQS_SIG *single_sig = NULL;
