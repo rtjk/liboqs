@@ -12,7 +12,7 @@ import os
 import json
 import git
 import uuid
-from datetime import datetime
+import datetime
 import copy
 
 cbom_json_file = "cbom.json"
@@ -156,7 +156,7 @@ def build_cbom(liboqs_root, liboqs_version):
     cbom_components.insert(0, liboqs_component)
 
     metadata = {}
-    metadata['timestamp'] = datetime.now().isoformat()
+    metadata['timestamp'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
     metadata['component'] = liboqs_component
 
     ## Dependencies
@@ -175,6 +175,7 @@ def build_cbom(liboqs_root, liboqs_version):
 
     ## CBOM
     cbom = {}
+    cbom['$schema'] = "https://raw.githubusercontent.com/CycloneDX/specification/1.6/schema/bom-1.6.schema.json"
     cbom['bomFormat'] = "CycloneDX"
     cbom['specVersion'] = "1.6"
     cbom['serialNumber'] = "urn:uuid:" + str(uuid.uuid4())
