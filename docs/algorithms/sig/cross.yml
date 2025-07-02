@@ -21,9 +21,9 @@ crypto-assumption: hardness of the restricted syndrome decoding problem for rand
   linear codes on a finite field
 website: https://www.cross-crypto.com/
 nist-round: 2
-spec-version: 2.0 + PQClean and OQS patches
+spec-version: 2.2 + PQClean and OQS patches
 primary-upstream:
-  source: https://github.com/CROSS-signature/CROSS-lib-oqs/commit/efd17279e75308b000bda7c7f58866620d652bc1
+  source: https://github.com/CROSS-signature/CROSS-lib-oqs/commit/fd4d5d23d804be093190d6a7e86b31ef7188c9d8
   spdx-license-identifier: CC0-1.0
 parameter-sets:
 - name: cross-rsdp-128-balanced
